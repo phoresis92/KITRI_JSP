@@ -1,0 +1,22 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" %>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	FIRST JSP
+	<%
+	String loginId =
+		(String)request.getAttribute("loginId");
+	String loginName = 
+		(String)request.getAttribute("loginName");
+	%>
+	로그인한 아이디<%= loginId %> <br/>
+	로그인한 이름 <%= loginName %> <br/>
+	
+	${ loginId } <br/>
+	${ loginName } <br/>
+</body>
+</html>

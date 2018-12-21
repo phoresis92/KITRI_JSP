@@ -1,0 +1,22 @@
+package com.young.command;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import com.young.dao.MDao;
+
+public class MGetCommand implements Command {
+
+	@Override
+	public void execute(HttpServletRequest req, HttpServletResponse resp) {
+		
+		MDao dao = new MDao();
+		dao.getMember((String)req.getAttribute("Phone"));
+		
+		
+		
+	}
+	
+	
+
+}

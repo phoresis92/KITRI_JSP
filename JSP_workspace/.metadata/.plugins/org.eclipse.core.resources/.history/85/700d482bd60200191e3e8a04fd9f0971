@@ -1,0 +1,37 @@
+package Programers;
+
+public class Watermelon {
+
+	public static String subak1(int n) {
+		
+		String[] arr = {"수", "박"};
+		String result ="";
+		
+		for(int i = 0 ; i < n ; i++) {
+			if(i%2 == 0) {
+				result += arr[0];
+			}else if(i%2 == 1) {
+				result += arr[1];
+			}
+			
+		}
+		
+		return result;
+		
+	}
+	
+	
+	public static String subak2(int n) {
+		
+		String
+		
+	}
+	
+	
+	public static void main(String[] args) {
+		
+		System.out.println(subak1(5));
+		System.out.println(subak1(2));
+		
+	}
+}

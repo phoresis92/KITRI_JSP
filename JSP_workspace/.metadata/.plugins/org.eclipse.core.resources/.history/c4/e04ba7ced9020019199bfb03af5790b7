@@ -1,0 +1,16 @@
+package Programers;
+
+import java.util.Vector;
+
+public class Kim {
+
+	public String solution(Vector<String> seoul) {
+	    int x = 0;
+	    for(int i = 0 ; i < seoul.size() ; i++){
+	    	if((seoul.get(i).equals("Kim")))	x = i;
+	    }
+	    
+	    return "김서방은 " + x + "에 있다";
+	
+}
+}

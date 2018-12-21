@@ -1,0 +1,23 @@
+package Programers;
+
+public class Siger {
+
+	public static void main(String[] args) {
+		
+		byte a = 'a';
+		byte z = 'z';
+
+		byte A = 'A';
+		byte Z = 'Z';
+		byte sp = (byte)' ';
+		
+		
+		System.out.println(a);
+		System.out.println(z);
+		System.out.println(A);
+		System.out.println(Z);
+		System.out.println(sp);
+		
+	}
+	
+}

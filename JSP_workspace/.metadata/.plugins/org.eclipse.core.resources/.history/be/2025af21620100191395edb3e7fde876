@@ -1,0 +1,5 @@
+package mvc.command;
+
+public class NullHandler {
+
+}

@@ -1,0 +1,42 @@
+package kr.co.young.cont;
+
+import java.io.IOException;
+
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import kr.co.young.model.MemberDao;
+
+@WebServlet("/login.do")
+public class Login extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+       
+
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		doPost(request, response);
+	}
+
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		
+		String code = request.getParameter("log_code");
+		//로그인 하는 형태
+		if(code.equals("login")) {
+			MemberDao md = new MemberDao();
+			md.getMember(request.getParameter("p_name"));
+			request.getParameter(name);
+			//로그인 정보가 제대로 입력 되었을 시 처리
+			//로그인 정보가 제대로 입력 안되었을 시 처리
+			
+			
+		} else if(code.equals("logout")) {
+			
+			
+			
+		}
+		
+	}
+
+}

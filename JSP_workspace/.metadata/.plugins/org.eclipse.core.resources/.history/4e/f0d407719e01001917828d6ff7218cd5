@@ -1,0 +1,19 @@
+package kr.co.young;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+
+public class FourthServlet extends HttpServlet {
+
+	/*servlet 생명주기
+	1. init();
+	2. service();
+	3. destroy();*/
+	
+	@Override
+	public void init() throws ServletException {
+		System.out.println("최초 1회 Servlet 초기화 구동");
+	}
+	
+	
+}

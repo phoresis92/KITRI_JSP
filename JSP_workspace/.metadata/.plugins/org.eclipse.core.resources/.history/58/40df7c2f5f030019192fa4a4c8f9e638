@@ -1,0 +1,28 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<script type="text/javascript">
+	function rtbase(){
+		location.href="/Regi.do"
+	}
+</script>
+
+</head>
+<body>
+	<h1>회원가입 완료 되었습니다.</h1>
+	
+	<label>이름 : </label>
+	<label>생년월일 : </label>
+	<label>성별 : </label>
+	<label>전화번호 : </label>
+	
+	
+	
+	<input type="button" value="돌아가기" onclick="rtbase()">
+</body>
+</html>

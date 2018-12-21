@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>회원 가입</title>
+</head>
+<body>
+asefasefasef
+
+	<form action="reg.do" method="post">
+		<label>이름 : </label><input name="p_name" type="text"><br>
+		<label>이메일 : </label><input name="p_email" type="text"><br>
+		<input type="submit" value="가입하기">
+	</form>
+</body>
+</html>

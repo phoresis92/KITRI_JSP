@@ -1,0 +1,76 @@
+<%@ page import="kr.co.young.model.MemberBean" %>
+<%@ page language="java" contentType="text/html; charset=UTF-8" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jstl/core" %>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+
+<script type="text/javascript">
+
+function memdo(type){
+	
+		var el = document.member;
+	if(type == "del"){
+		//삭제 서블릿 실행 mem_code > delete
+		
+		el.mem_code.value = "delete";
+		
+		
+	}else if(type == "mod"){
+		//수정 서블릿 실행 mem_code > modify
+		
+		el.mem_code.value = "modify";
+		//el.method = "get";
+		//el.action = "/other.do";
+		
+	}else if(type == "logout"){
+		
+		el.log_code.value = "logout";
+		el.action = "login.do";
+	}
+	
+	el.submit();
+	
+}
+
+</script>
+
+<title>회원 정보 보기</title>
+</head>
+<body>
+	<%-- 입력한 이름 : <%= request.getParameter("mb_name") %>
+	입력한 이메일 : <%= request.getParameter("mb_email") %> --%>
+	<!-- <h1>회원가입 완료 되었습니다</h1> -->
+<%-- 	<% 
+		MemberBean mb = (MemberBean)request.getAttribute("MEMBER");
+	%> --%>
+	<%-- <!-- 스크립트릿을 통한 출력 방법 -->
+	입력한 이름 : <%= mb.getName() %> <br>
+	입력한 이메일 : <%= mb.getEmail() %> <br>
+	
+	<!-- EL을 통한 출력방법 -->
+	입력한 이름 : ${ MEMBER.name } <br>
+	입력한 이메일 : ${ MEMBER.email } <br> --%>
+	---------------------------------------------------- <br>
+	
+	
+	<%-- <c:set var="al" value="${ requestScope.MEMBER }"/> --%>
+	<c:forEach items="${ MEMBER }" var="mem">
+		${ mem.name }
+		${ mem.email }
+	</c:forEach>
+
+	<form action="mem.do" method="post" name="member">
+		<input name="h_name" type="hidden" value="${ requestScope.MEMBER.name }">
+		<input name="h_email" type="hidden" value="${ requestScope.MEMBER.email }">
+		<input name="mem_code" type="hidden" value="">
+		<input name="log_code" type="hidden" value="">
+		<input type="button" value="수정하기" onclick="memdo('mod');">	
+		<input type="button" value="삭제하기" onclick="memdo('del');">	
+		<input type="button" value="로그아웃" onclick="memdo('logout')">
+	</form>
+	
+	
+</body>
+</html>

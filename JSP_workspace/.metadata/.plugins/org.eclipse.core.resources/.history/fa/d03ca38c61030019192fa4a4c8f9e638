@@ -1,0 +1,5 @@
+package com.young.command;
+
+public class MModifyCommand {
+
+}

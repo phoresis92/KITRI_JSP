@@ -1,0 +1,59 @@
+package algo_test;
+
+public class Bubble_Sort {
+	
+	public static void bubble_asc(int[] arr) {
+		
+		for(int i = 0; i < arr.length ; i ++) {
+			for(int j = 0 ; j < arr.length-1-i; j ++) {
+				
+				if(arr[j] > arr[j+1]) {
+					int temp = 0;
+					temp = arr[j];
+					arr[j] = arr[j+1];
+					arr[j+1] = temp;
+				}
+				
+			}
+		}
+		
+	}
+	
+	
+	public static void bubble_desc(int[] arr) {
+		
+		for(int i = 0 ; i < arr.length; i++) {
+			for(int j = 0; j < arr.length-1-i ; j++) {
+				
+				if(arr[j]<arr[j+1]) {
+					int temp = 0;
+					temp = arr[j];
+					arr[j] = arr[j+1];
+					arr[j+1] = temp;
+				}
+				
+			}
+		}
+		
+	}
+	
+	
+	public static void main(String[] args) {
+		
+		int[] arr = {3,40,26,69,12,36};
+		
+		int total = 100;
+		int[] arrr = null ; 
+		for(int i = 0 ; i < total ; i++) {
+			arrr = new int[total];
+			arrr[i] = (int)(Math.random()*100);
+		}
+		
+		bubble_asc(arrr);
+		
+		for(int num : arrr) {
+			System.out.println(num + " ");
+		}
+		
+	}
+}

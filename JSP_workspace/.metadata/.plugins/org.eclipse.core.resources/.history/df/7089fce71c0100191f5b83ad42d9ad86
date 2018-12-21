@@ -1,0 +1,62 @@
+package algo_test;
+
+public class Selection_Sort {
+	
+	public static void selection_asc(int[] arr) {
+		
+		for(int i = 0 ; i < arr.length-1 ; i++) { //arr.length-1 : 마지막 요소는 자연스럽게 정렬됨
+			int min_index = i;
+			for(int j = i+1 ; j < arr.length ; j++) {
+				
+				if(arr[j] < arr[min_index]) {
+					min_index = j;
+				}
+				
+			}
+			int temp ;
+			temp = arr[min_index];
+			arr[min_index] = arr[i];
+			arr[i] = temp;
+			
+		}
+		
+		for(int print_num : arr) {
+			System.out.println(print_num + " ");
+		}
+		
+	}
+	
+	
+	public static void selection_desc(int[] arr) {
+		
+		for(int i = 0 ; i < arr.length -1 ; i++) {
+			int max_index = i;
+			for(int j = i+1 ; j < arr.length ; j++) {
+				
+				if(arr[max_index] < arr[j]) {
+					max_index = j;
+				}
+				
+			}
+			int temp;
+			temp = arr[max_index];
+			arr[max_index] = arr[arr.length-1-i];
+			arr[arr.length-1-i] = arr[max_index];
+		}
+		
+		for(int num : arr) {
+			System.out.print(num + " ");
+		}
+		
+	}
+	
+	
+	public static void main(String[] args) {
+		
+		int[] arr = {3,40,26,69,12,36};
+
+		selection_asc(arr);
+		selection_desc(arr);
+		
+	}
+}

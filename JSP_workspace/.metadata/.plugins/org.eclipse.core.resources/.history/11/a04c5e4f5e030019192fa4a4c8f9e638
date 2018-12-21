@@ -1,0 +1,37 @@
+package com.young.command;
+
+import java.util.HashMap;
+import java.util.Map;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import com.young.dao.MDao;
+import com.young.dto.MDto;
+
+public class MRegiCommand implements Command {
+
+	@Override
+	public void execute(HttpServletRequest req, HttpServletResponse resp) {
+		
+		
+		String name = req.getParameter("name");
+		String birth = req.getParameter("birth");
+		String gender = req.getParameter("gender");
+		String phone = req.getParameter("front_num")+req.getParameter("mid_num")+req.getParameter("last_num");
+		
+		MDao dao = new MDao();
+		int result = dao.regi(name,birth,gender,phone);
+		
+		MDto dto = new MDto(name,birth,gender,phone);
+		
+		Map map = new HashMap<Integer,MDto>();
+		map.put(result, dto);
+		
+		req.setAttribute("REGI", map);
+		
+	}
+
+	
+	
+}

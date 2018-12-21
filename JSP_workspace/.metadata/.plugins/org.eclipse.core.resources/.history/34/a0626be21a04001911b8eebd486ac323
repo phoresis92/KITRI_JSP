@@ -1,0 +1,43 @@
+package control;
+
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.servlet.RequestDispatcher;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import dto.Category;
+import dto.Product;
+@WebServlet("product.do")
+public class ProductListServlet extends HttpServlet {
+	private static final long serialVersionUID = -5727566417040289456L;
+
+	@Override
+	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		
+		List<Product> list = new ArrayList<>();
+		
+		Category cate = new Category("it", "IT전문서적");
+		
+		Product p1 = new Product("1", "일", cate, 1000);
+		list.add(p1);
+		Product p2 = new Product("2", "이", cate, 2000);
+		list.add(p2);
+		
+		Category cate1 = new Category("en", "영어전문서적");
+		Product p3 = new Product("3","삼", cate1, 3000);
+		list.add(p3);
+		
+		req.setAttribute("PROD", list);
+		RequestDispatcher rd = req.getRequestDispatcher("/productlistresult.jsp");
+		rd.forward(req, resp);
+	}
+	
+	
+	
+}
