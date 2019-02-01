@@ -1,9 +1,0 @@
-package control;
-
-import javax.servlet.http.HttpServlet;
-
-public class ProductListServlet extends HttpServlet {
-
-	
-	
-}

@@ -1,8 +1,0 @@
-package dto;
-
-public class Category {
-	
-	private String cate_no;
-	private String cate_name;
-
-}

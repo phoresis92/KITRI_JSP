@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+		<item value="C:\Users\hushe\Desktop\샘플\JSP_Movie_Reservation_System-master"/>
 		<item value="C:\Users\hushe\Desktop\RentHotel-master"/>
 		<item value="C:\Users\hushe\Desktop\샘플\SimpleBBS-master"/>
 		<item value="C:\Users\hushe\Desktop\샘플\SimpleBBS-master.zip"/>
@@ -22,6 +23,12 @@
 	</section>
 	<section name="WORKBENCH_SETTINGS">
 		<list key="ENABLED_TRANSFERS">
+		</list>
+	</section>
+	<section name="NewWizardAction">
+		<item value="org.eclipse.jst.servlet.ui.project.facet.WebProjectWizard" key="NewWizardSelectionPage.STORE_SELECTED_ID"/>
+		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
+			<item value="org.eclipse.wst.web.ui"/>
 		</list>
 	</section>
 	<section name="ChooseWorkspaceDialogSettings">

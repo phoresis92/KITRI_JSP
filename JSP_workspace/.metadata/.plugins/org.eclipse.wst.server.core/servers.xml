@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <servers>
-  <server auto-publish-setting="2" auto-publish-time="1" configuration-id="/Servers/Tomcat v8.5 Server at localhost-config" deployDir="wtpwebapps" hostname="localhost" id="Tomcat v8.5 Server at localhost" name="Tomcat v8.5 Server at localhost" runtime-id="Apache Tomcat v8.5" server-type="org.eclipse.jst.server.tomcat.85" server-type-id="org.eclipse.jst.server.tomcat.85" start-timeout="45" stop-timeout="15" testEnvironment="false" timestamp="20">
-    <list key="modules" value0="eljstl2::org.eclipse.jst.jee.server:eljstl2::jst.web::2.5" value1="mvc_Subject::org.eclipse.jst.jee.server:mvc_Subject::jst.web::3.1" value2="RequestServlet::org.eclipse.jst.jee.server:RequestServlet::jst.web::3.1" value3="klyWeb::org.eclipse.jst.jee.server:klyWeb::jst.web::3.1"/>
+  <server auto-publish-setting="2" auto-publish-time="1" configuration-id="/Servers/Tomcat v8.5 Server at localhost-config" deployDir="wtpwebapps" hostname="localhost" id="Tomcat v8.5 Server at localhost" name="Tomcat v8.5 Server at localhost" runtime-id="Apache Tomcat v8.5" server-type="org.eclipse.jst.server.tomcat.85" server-type-id="org.eclipse.jst.server.tomcat.85" start-timeout="45" stop-timeout="15" testEnvironment="false" timestamp="26">
+    <list key="modules" value0="chat_test::org.eclipse.jst.jee.server:chat_test::jst.web::3.1" value1="FileUpload::org.eclipse.jst.jee.server:FileUpload::jst.web::3.1"/>
   </server>
 </servers>

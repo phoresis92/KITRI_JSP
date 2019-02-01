@@ -31,7 +31,7 @@
 
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log" suffix=".txt"/>
 
-      <Context docBase="eljstl2" path="/eljstl2" reloadable="true" source="org.eclipse.jst.jee.server:eljstl2"/><Context docBase="mvc_Subject" path="/mvc_Subject" reloadable="true" source="org.eclipse.jst.jee.server:mvc_Subject"/><Context docBase="RequestServlet" path="/RequestServlet" reloadable="true" source="org.eclipse.jst.jee.server:RequestServlet"/><Context docBase="klyWeb" path="/klyWeb" reloadable="true" source="org.eclipse.jst.jee.server:klyWeb"/></Host>
+      <Context docBase="chat_test" path="/chat_test" reloadable="true" source="org.eclipse.jst.jee.server:chat_test"/><Context docBase="FileUpload" path="/FileUpload" reloadable="true" source="org.eclipse.jst.jee.server:FileUpload"/></Host>
     </Engine>
   </Service>
 </Server>

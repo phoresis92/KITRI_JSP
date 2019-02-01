@@ -1,6 +1,4 @@
 #Tomcat publish data
-#Fri Dec 21 16:49:58 KST 2018
-org.eclipse.jst.jee.server\:klyWeb=C\:\\Users\\hushe\\Desktop\\apache-tomcat-8.5.35\\wtpwebapps\\klyWeb
-org.eclipse.jst.jee.server\:mvc_Subject=C\:\\Users\\hushe\\Desktop\\apache-tomcat-8.5.35\\wtpwebapps\\mvc_Subject
-org.eclipse.jst.jee.server\:RequestServlet=C\:\\Users\\hushe\\Desktop\\apache-tomcat-8.5.35\\wtpwebapps\\RequestServlet
-org.eclipse.jst.jee.server\:eljstl2=C\:\\Users\\hushe\\Desktop\\apache-tomcat-8.5.35\\wtpwebapps\\eljstl2
+#Thu Jan 03 10:05:59 KST 2019
+org.eclipse.jst.jee.server\:FileUpload=C\:\\Users\\hushe\\Desktop\\apache-tomcat-8.5.35\\wtpwebapps\\FileUpload
+org.eclipse.jst.jee.server\:chat_test=C\:\\Users\\hushe\\Desktop\\apache-tomcat-8.5.35\\wtpwebapps\\chat_test

@@ -280,3 +280,36 @@
 12월 21, 2018 18:36:52.73 [3492:11536:1221/183652.729:ERROR:connection_factory_impl.cc(408)] Failed to connect to MCS endpoint with error -21
 12월 21, 2018 18:36:56.66 [3492:11536:1221/183656.666:ERROR:connection_factory_impl.cc(408)] Failed to connect to MCS endpoint with error -21
 12월 21, 2018 18:46:10.80 [3492:11856:1221/184610.801:ERROR:http_bridge.cc(126)] NOT IMPLEMENTED
+
+12월 26, 2018 19:24:05.42 NEW SESSION
+12월 26, 2018 19:24:05.42 [12276:13268:1226/192405.411:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+12월 26, 2018 19:59:48.69 [12276:11856:1226/195948.690:ERROR:connection_factory_impl.cc(408)] Failed to connect to MCS endpoint with error -21
+12월 26, 2018 19:59:51.90 [12276:11856:1226/195951.898:ERROR:connection_factory_impl.cc(408)] Failed to connect to MCS endpoint with error -106
+12월 26, 2018 20:00:51.70 [12276:11856:1226/200051.708:ERROR:connection_factory_impl.cc(408)] Failed to connect to MCS endpoint with error -106
+12월 26, 2018 20:21:56.69 [12276:11856:1226/202156.693:ERROR:connection_factory_impl.cc(408)] Failed to connect to MCS endpoint with error -21
+12월 26, 2018 21:46:14.63 [12276:13268:1226/214614.613:ERROR:gcm_channel_status_request.cc(151)] GCM channel request failed.
+12월 26, 2018 21:46:14.90 [12276:11856:1226/214614.614:ERROR:connection_factory_impl.cc(408)] Failed to connect to MCS endpoint with error -21
+12월 26, 2018 21:46:26.60 [12276:11856:1226/214626.607:ERROR:connection_factory_impl.cc(408)] Failed to connect to MCS endpoint with error -21
+12월 26, 2018 22:36:00.33 [12276:13268:1226/223600.334:ERROR:http_bridge.cc(126)] NOT IMPLEMENTED
+
+12월 28, 2018 24:59:05.24 NEW SESSION
+12월 28, 2018 24:59:05.24 [11896:7216:1228/005905.239:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+12월 28, 2018 01:01:12.90 [11896:7216:1228/010112.905:ERROR:http_bridge.cc(126)] NOT IMPLEMENTED
+12월 28, 2018 01:01:18.79 [11996:9360:1228/010118.795:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+12월 28, 2018 01:01:41.78 [11996:9360:1228/010141.785:ERROR:http_bridge.cc(126)] NOT IMPLEMENTED
+12월 28, 2018 01:05:48.73 [6084:9040:1228/010548.732:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+12월 28, 2018 01:05:53.10 [6084:9040:1228/010553.105:ERROR:http_bridge.cc(126)] NOT IMPLEMENTED
+12월 28, 2018 01:07:03.17 [11384:3336:1228/010703.176:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+12월 28, 2018 01:08:53.16 [11384:3336:1228/010853.163:ERROR:http_bridge.cc(126)] NOT IMPLEMENTED
+12월 28, 2018 01:09:36.33 [9280:5532:1228/010936.332:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+12월 28, 2018 04:28:36.70 [9280:5532:1228/042836.707:ERROR:http_bridge.cc(126)] NOT IMPLEMENTED
+
+12월 28, 2018 09:15:27.90 NEW SESSION
+12월 28, 2018 09:15:27.90 [1240:7068:1228/091527.878:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+12월 28, 2018 10:25:16.95 [1240:7068:1228/102516.950:ERROR:http_bridge.cc(126)] NOT IMPLEMENTED
+
+1월 03, 2019 09:23:27.60 NEW SESSION
+1월 03, 2019 09:23:27.60 [11840:5124:0103/092327.603:ERROR:in_progress_cache_impl.cc(203)] Cache is not initialized, cannot RetrieveEntry.
+1월 03, 2019 09:23:29.04 [11840:5124:0103/092329.048:ERROR:account_info_fetcher.cc(59)] OnGetTokenFailure: Invalid credentials (1).
+1월 03, 2019 09:23:29.06 [11840:5124:0103/092329.056:ERROR:account_tracker.cc(240)] AccessTokenFetched error: Invalid credentials (1).
+1월 03, 2019 10:16:00.26 [11840:5124:0103/101600.268:ERROR:http_bridge.cc(126)] NOT IMPLEMENTED
